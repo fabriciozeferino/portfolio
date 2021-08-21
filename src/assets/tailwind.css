@@ -1,12 +1,3 @@
-.vue-slider-process {
-  background-color: theme("colors.default-red");
-}
-
-.vue-slider-dot-tooltip-inner {
-  border-color: theme("colors.default-red");
-  background-color: theme("colors.default-red");
-}
-
 @tailwind base;
 @tailwind components;
 

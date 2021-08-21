@@ -59,18 +59,14 @@
         <div class="mt-6 lg:mt-0 lg:flex-1">
           <div class="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
             <div>
-              <h5 class="text-gray-200 uppercase">
-                About
-              </h5>
+              <h5 class="text-gray-200 uppercase">About</h5>
               <a href="#" class="block mt-2 text-sm text-gray-400">Company</a>
               <a href="#" class="block mt-2 text-sm text-gray-400">community</a>
               <a href="#" class="block mt-2 text-sm text-gray-400">Careers</a>
             </div>
 
             <div>
-              <h5 class="text-gray-200 uppercase">
-                Products
-              </h5>
+              <h5 class="text-gray-200 uppercase">Products</h5>
               <a href="#" class="block mt-2 text-sm text-gray-400"
                 >Mega cloud</a
               >
@@ -81,21 +77,25 @@
             </div>
 
             <div>
-              <h5 class="text-gray-200 uppercase">
-                Contact
-              </h5>
+              <h5 class="text-gray-200 uppercase">Contact</h5>
 
               <section class="mb-4 text-sm text-gray-400">
                 <ul>
                   <li
-                    class="mt-1 pl-6 whitespace-no-wrap inline-flex items-center"
+                    class="
+                      mt-1
+                      pl-6
+                      whitespace-no-wrap
+                      inline-flex
+                      items-center
+                    "
                   >
                     <MailIcon
                       class="-ml-6 h-4 w-4 text-gray-600 fill-current mr-2"
                     />
                     fabriciozeferino@gmail.com
                   </li>
-                  <li class="mt-1 pl-6  whitespace-no-wrap inline-flex">
+                  <li class="mt-1 pl-6 whitespace-no-wrap inline-flex">
                     <PlaceIcon
                       class="-ml-6 h-4 w-4 text-gray-600 fill-current mr-2"
                     />

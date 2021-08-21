@@ -1,16 +1,24 @@
 <template>
-  <div
-    class="px-6 py-2 -my-2"
-    @click="toggleTheme"
-  >
+  <div class="px-6 py-2 -my-2" @click="toggleTheme">
     <svg
-      class="inline-block h-6 w-6 mt-2 text-gray-500 dark:text-secondary-200 dark:hover:text-secondary-900 cursor-pointer fill-current"
+      class="
+        inline-block
+        h-6
+        w-6
+        mt-2
+        text-gray-500
+        dark:text-secondary-200 dark:hover:text-secondary-900
+        cursor-pointer
+        fill-current
+      "
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-    ><path
-      fill="none"
-      d="M0 0h24v24H0V0z"
-    /><path d="M3.55 19.09l1.41 1.41 1.79-1.8-1.41-1.41zM11 20h2v3h-2zM1 11h3v2H1zm12-6.95v3.96l1 .58c1.24.72 2 2.04 2 3.46 0 2.21-1.79 4-4 4s-4-1.79-4-4c0-1.42.77-2.74 2-3.46l1-.58V4.05h2m2-2H9v4.81C7.21 7.9 6 9.83 6 12.05c0 3.31 2.69 6 6 6s6-2.69 6-6c0-2.22-1.21-4.15-3-5.19V2.05zM20 11h3v2h-3zm-2.76 7.71l1.79 1.8 1.41-1.41-1.8-1.79z" /></svg>
+    >
+      <path fill="none" d="M0 0h24v24H0V0z" />
+      <path
+        d="M3.55 19.09l1.41 1.41 1.79-1.8-1.41-1.41zM11 20h2v3h-2zM1 11h3v2H1zm12-6.95v3.96l1 .58c1.24.72 2 2.04 2 3.46 0 2.21-1.79 4-4 4s-4-1.79-4-4c0-1.42.77-2.74 2-3.46l1-.58V4.05h2m2-2H9v4.81C7.21 7.9 6 9.83 6 12.05c0 3.31 2.69 6 6 6s6-2.69 6-6c0-2.22-1.21-4.15-3-5.19V2.05zM20 11h3v2h-3zm-2.76 7.71l1.79 1.8 1.41-1.41-1.8-1.79z"
+      />
+    </svg>
 
     <slot />
   </div>
@@ -22,7 +30,6 @@ export default {
 
   methods: {
     toggleTheme() {
-
       if (localStorage.theme === 'dark') {
         document.querySelector('html').classList.remove('dark')
         localStorage.theme = 'light'

@@ -5,6 +5,7 @@ import router from './router'
 import store from './store'
 
 import './assets/styles/index.css'
+import './assets/tailwind.css'
 
 // On page load or when changing tdhsemes, best to add inline in `head` to avoid FOUC
 if (
@@ -18,7 +19,4 @@ if (
   document.querySelector('html').classList.remove('dark')
 }
 
-createApp(App)
-  .use(store)
-  .use(router)
-  .mount('#app')
+createApp(App).use(store).use(router).mount('#app')

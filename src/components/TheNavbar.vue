@@ -9,7 +9,19 @@
           <div class="flex md:hidden">
             <button
               type="button"
-              class="text-gray-500 dark:text-gray-300 hover:text-gray-600 focus:outline-none focus:text-gray-600 border-l dark:border-gray-700 px-4 py-2 -my-2 -mr-6 cursor-pointer"
+              class="
+                text-gray-500
+                dark:text-gray-300
+                hover:text-gray-600
+                focus:outline-none focus:text-gray-600
+                border-l
+                dark:border-gray-700
+                px-4
+                py-2
+                -my-2
+                -mr-6
+                cursor-pointer
+              "
               aria-label="toggle menu"
               @click="drawer"
             >
@@ -60,7 +72,22 @@
     </transition>
 
     <aside
-      class="transform top-0 left-0 w-full xs:w-256 bg-white dark:bg-black-medium fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
+      class="
+        transform
+        top-0
+        left-0
+        w-full
+        xs:w-256
+        bg-white
+        dark:bg-black-medium
+        fixed
+        h-full
+        overflow-auto
+        ease-in-out
+        transition-all
+        duration-300
+        z-30
+      "
       :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
     >
       <div class="flex justify-between items-center shadow px-6 py-2 h-14 mb-8">
@@ -68,7 +95,19 @@
 
         <button
           type="button"
-          class="text-gray-500  dark:text-gray-300 hover:text-gray-600 focus:outline-none focus:text-gray-600 border-l dark:border-gray-700 px-4 py-3 -my-3 -mr-6 cursor-pointer"
+          class="
+            text-gray-500
+            dark:text-gray-300
+            hover:text-gray-600
+            focus:outline-none focus:text-gray-600
+            border-l
+            dark:border-gray-700
+            px-4
+            py-3
+            -my-3
+            -mr-6
+            cursor-pointer
+          "
           aria-label="toggle menu"
           @click="drawer"
         >
@@ -81,7 +120,20 @@
           v-for="item in menuItems"
           :key="item.path"
           tag="div"
-          class="flex justify-between items-center border-b dark:border-gray-700 shadow-inner first:border-t py-4 px-4 cursor-pointer font-semibold text-base"
+          class="
+            flex
+            justify-between
+            items-center
+            border-b
+            dark:border-gray-700
+            shadow-inner
+            first:border-t
+            py-4
+            px-4
+            cursor-pointer
+            font-semibold
+            text-base
+          "
           :to="item.path"
           @click="drawer"
         >
@@ -93,7 +145,16 @@
 
       <div class="w-56 mx-auto">
         <ToggleDarkMode
-          class="shadow-md rounded-lg bg-white dark:bg-black-light inline-block flex justify-center items-center"
+          class="
+            shadow-md
+            rounded-lg
+            bg-white
+            dark:bg-black-light
+            inline-block
+            flex
+            justify-center
+            items-center
+          "
           @click="drawer"
         >
           <span class="dark:text-gray-200 ml-1 mt-1"
@@ -155,7 +216,7 @@ export default {
   },
 
   mounted() {
-    document.addEventListener('keydown', e => {
+    document.addEventListener('keydown', (e) => {
       if (e.keyCode === 27 && this.isOpen) this.isOpen = false
     })
   },

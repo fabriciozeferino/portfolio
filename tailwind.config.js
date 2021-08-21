@@ -35,7 +35,7 @@ module.exports = {
       'secondary-900': '#018786',
 
       gray: {
-        '50': '#F7F7F7',
+        50: '#F7F7F7',
         100: '#E1E1E1',
         200: '#CFCFCF',
         300: '#B1B1B1',
@@ -79,6 +79,5 @@ module.exports = {
       borderWidth: ['first'],
     },
   },
-  plugins: [
-  ],
+  plugins: [],
 }
